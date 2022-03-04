@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.top {
+  min-height: 100vh;
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  border: 1px solid blue;
+}
+.svg_container {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#json-group {
+  fill: red;
+  border: 3px solid blue;
+}
+.extra_content {
+  min-height: 100vh;
+}
