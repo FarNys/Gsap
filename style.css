@@ -33,6 +33,50 @@ body {
   fill: red;
   border: 3px solid blue;
 }
-.extra_content {
+.morph_container {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blue;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#email_morph {
+  animation: animate 3s linear;
+}
+@keyframes animate {
+  from {
+    transform: translateZ(0deg);
+  }
+  to {
+    transform: translateZ(360deg);
+  }
+}
+.scroll_box {
+  border: 20px solid green;
+}
+.scroll_container {
+  border: 1px solid red;
+  position: relative;
+  min-height: 100vh;
+  margin-top: 6rem;
+}
+.card {
+  width: 400px;
+  height: 500px;
+  border: 1px solid red;
+
+  background-color: antiquewhite;
+}
+.other_cards {
+  position: relative;
+}
+.card_2,
+.card_3 {
+  position: absolute;
+  top: 500px;
+  /* transform: translateY(700px); */
+  border: 5px solid red;
+  visibility: 0;
 }
